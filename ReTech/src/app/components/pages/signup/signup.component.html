@@ -1,0 +1,44 @@
+<main class="wrap-login">
+  <div class="container">
+    <div class="login-box">
+      <h2>Registro</h2>
+      <form >
+        <input
+          label="name"
+          formControlName="name"
+          inputId="name"
+          
+        />
+
+        <input
+          label="email"
+          type="email"
+          formControlName="email"
+          inputId="email"
+       
+        />
+        <input
+          label="password"
+          type="password"
+          inputId="password"
+          formControlName="password"
+        
+        />
+
+        <input
+          label="confirma password"
+          type="password"
+          inputId="confirmPassword"
+          formControlName="confirmPassword"
+        
+        />
+
+        <button type="submit" class="btn">{{isLoading ? 'Cadastrando...' : 'Cadastrar'}}</button>
+        <div class="signup-link">
+          <p>Voltar para tela de <a routerLink="/auth">login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</main>
